@@ -1,0 +1,82 @@
+/* Reseteo universal y modelo de caja */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos generales */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    padding: 40px 20px;
+}
+
+
+/* Contenedor principal */
+.contenedor-principal {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+}
+
+
+/* pseudoelementos */
+.titulo-oficial::before {
+    content: "🏛️ ";
+    font-size: 30px;
+}
+
+
+.titulo-oficial {
+    color: darkblue;
+    margin-bottom: 20px;
+    border-bottom: 3px solid grey;
+    padding-bottom: 10px;
+}
+
+
+/* formulario */
+form {
+    margin-top: 20px;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+
+/* Botón y pseudoclases */
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn-enviar:hover {
+    background-color: blue;
+}
+
+
+.btn-enviar:focus, input:focus {
+    outline: 3px solid red;
+    outline-offset: 2px;
+}
+
